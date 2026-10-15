@@ -36,7 +36,6 @@ export default function Home() {
       if (!acc) return;
       save(KEYS.pending, { id, since: Date.now() } as PendingLaunch);
       markUsed(id);
-      window.open(acc.url, "_blank", "noopener,noreferrer");
     },
     [accounts, markUsed]
   );
@@ -196,6 +195,6 @@ export default function Home() {
           setCreditAccount(null);
         }}
       />
-    </main>
+    </div>
   );
 }
