@@ -97,14 +97,15 @@ export function AccountCard({ account, onLaunch, onEdit, onRemove }: Props) {
         <span>{account.lastUsed ? timeAgo(account.lastUsed) : "BELUM"}</span>
       </div>
 
-      <button
+      <a
+        href={`x-safari-${account.url}`}
         onClick={() => onLaunch(account.id)}
         className="brut-btn w-full py-3 text-sm flex items-center justify-center gap-2"
         style={{ background: "#b794f6" }}
       >
         <span>BUKA FLOW</span>
         <ArrowRightIcon size={14} />
-      </button>
+      </a>
     </div>
   );
 }
