@@ -195,6 +195,6 @@ export default function Home() {
           setCreditAccount(null);
         }}
       />
-    </div>
+    </main>
   );
 }
